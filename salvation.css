@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styling */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Blog Post Styling */
+.blog-post {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Headings */
+.blog-post h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post h4 {
+    color: #34495e;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Paragraphs */
+.blog-post p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Italic Quotes */
+.blog-post i {
+    display: block;
+    font-style: italic;
+    color: #777;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 3px solid #3498db;
+}
+
+/* Read More Button */
+.read-more {
+    display: none;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.read-more-btn:hover {
+    background: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .blog-post {
+        padding: 15px;
+    }
+
+    .blog-post h2 {
+        font-size: 22px;
+    }
+
+    .blog-post p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    p {
+        font-size: 0.95rem;
+    }
+}
+@keyframes breathing {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-link a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: #007BFF;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    animation: breathing 2s infinite ease-in-out; /* Breathing effect */
+}
+
+.form-link a:hover {
+    background: #0056b3;
+    transform: scale(1.15);
+}

@@ -1,0 +1,22 @@
+.watch-button {
+    display: inline-block;
+    background-color:red; /* Primary button color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Padding around the text */
+    font-size: 18px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: fixed;
+    align-items: center;
+    font-weight: bold;
+    z-index: 13;
+    }
+
+    /* Hover Effect */
+    .watch-button:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+        cursor: pointer; /* Pointer cursor */
+        transform: scale(1.2);
+    }
